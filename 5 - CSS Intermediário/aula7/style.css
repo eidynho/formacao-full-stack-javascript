@@ -1,0 +1,39 @@
+
+
+
+::selection {
+  color: pink;
+  background: black;
+}
+
+p::first-line {
+  color: orange;
+}
+
+p::first-letter {
+  color: red;
+  font-size: 50px;
+}
+
+
+
+h1::before {
+  background: url(https://simpleicon.com/wp-content/uploads/rocket.svg);
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  content: "";
+  margin-right: 10px;
+}
+
+h1::after {
+  background: url(https://simpleicon.com/wp-content/uploads/rocket.svg);
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  content: "";
+  margin-left: 10px;
+}
+

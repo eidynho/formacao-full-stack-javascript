@@ -1,0 +1,57 @@
+
+a {
+  color: red;
+}
+
+a:hover {
+  color: green;
+  font-weight: bold;
+}
+
+a:hover + .caixa {
+  display: block;
+}
+
+a:visited {
+  color: yellow;
+}
+
+a:active {
+  color: pink;
+}
+
+.caixa {
+  display: none;
+  width: 150px;
+  height: 150px;
+  background: black;
+}
+
+.caixa:hover{
+  width: 10px;
+  height: 10px;
+  background: green;
+}
+
+
+
+ul li:first-child {
+  color: red;
+}
+
+
+ul li:last-child {
+  color: blue;
+}
+
+
+
+.exemplo p:first-child {
+  color: green;
+}
+
+
+
+.exemplo2 p:nth-child(5) {
+  color: orange;
+}
