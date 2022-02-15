@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    
+    <form name="nome" action="salvar.html" method="post"> <!-- action é para onde quer mandar os dados, geralmente um servidor, um arquivo que receberá, processará e manipular (salvar em um banco de dados)-->
+<!-- get: envia os dados na URL -->
+<!-- post: depende de enviar os dados pro back-end, processe esses dados e depois devolva um resultado -->
+        <label>Nome: </label> <!-- semântica -->
+        <input name="nome" type="text" placeholder="Digite o seu nome">
+
+        <label>E-mail: </label>
+        <input name="email" type="email" placeholder="Digite o seu e-mail"> <!-- vai aparecer um teclado de letras com o @ -->
+
+        <label>Senha: </label>
+        <input type="password" placeholder="Digite uma senha">
+
+        <input type="file" name="file"> <!-- tipo upload, imagem, arquivo... -->
+        <input type="tel" name="tel"> <!-- teclado numérico -->
+
+        <label for="color">Selecione a cor do seu nome</label>
+        <input type="color" name="color">
+        
+        <button>Enviar</button> <!-- semântica (UTILIZAR ESSA) -->
+    </form>
+
+</body>
+</html>
