@@ -1,0 +1,18 @@
+
+
+h1 {
+    color: var(--color-primary);
+}
+
+h2 {
+    color: var(--color-secondary);
+}
+
+p {
+    color: var(--color-primary);
+}
+
+button {
+    background-color: var(--color-primary);
+    color: white;
+}

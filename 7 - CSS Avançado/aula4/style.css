@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    font-size: 20px;
+}
+
+body {
+    font-size: 15px;
+}
+
+.box {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.box2 {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 0, 0);
+}
+
+p {
+    font-size: 2rem; /* relativo ao root(r) */
+}

@@ -1,0 +1,21 @@
+body {
+  margin: 100px;
+}
+
+.box-parent {
+  perspective: 1000px; /* funciona para o filho dessa box */
+}
+
+.box {
+  width: 1000px;
+  height: 300px;
+  background-color: #000000;
+  transition-duration: 380ms;
+  transform: rotateY();
+}
+
+.box:hover {
+  transform: rotateY(-20deg);
+  background-color: red;
+  box-shadow: 0 0 20px black;
+}
