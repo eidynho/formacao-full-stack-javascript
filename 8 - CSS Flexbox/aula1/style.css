@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+.container {
+    background-color: silver;
+    display: flex; /* anula os displays dos filhos, passando a se comportar com display flex */
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* shorthand de flex-direction e flex-wrap: flex-flow: row nowrap  */
+}
+
+.caixa {
+    width: 100px;
+    height: 100px;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}

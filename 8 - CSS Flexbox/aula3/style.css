@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+.container {
+    background-color: silver;
+    height: 600px;
+    display: flex; /* anula os displays dos filhos, passando a se comportar com display flex */
+    flex-direction: row;
+
+    justify-content: space-around;
+
+    align-items: center; /* funcionará apenas quando o flex-direction estiver row; e seu papel é movimentar os elementos no eixo vertical */
+    align-content: center; /* alinhamento horizontal quando o wrap quebra pra linha de baixo, espaçando as linhas quebradas. */
+}
+
+.caixa {
+    width: 100px;
+    height: 100px;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
