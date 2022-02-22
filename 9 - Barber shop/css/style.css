@@ -1,0 +1,454 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+
+:root {
+    --color-primary: #917758;
+    --color-secondary: #3c2915;
+    --color-primary-light: #f5eee6;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.home {
+    height: 100vh;
+    background-image: url(../images/bg-home.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.home .header  {
+    padding: 30px 0;
+}
+
+.home .header .nav {
+    display: flex;
+    justify-content: center;
+}
+
+.home .header .nav ul {
+    display: flex;
+    list-style: none;
+}
+
+
+.home .header .nav ul li {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: center;
+
+}
+
+.home .header .nav ul li a {
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px;
+    color: white;
+}
+
+.home .header .nav ul li a:hover {
+    border-bottom: 1px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.home .header .nav ul li .logo {
+    margin: 0 30px;
+}
+
+.home .banner {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 260px;
+    margin-top: -70px;
+    width: 760px;
+    margin-left: -380px;
+}
+
+.home .banner span {
+    display: block;
+}
+
+.home .banner .slogan1 {
+    text-transform: uppercase;
+    color: var(--color-primary);
+    letter-spacing: 4px;
+    font-size: 14px;
+}
+
+.home .banner h1 {
+    font-size: 120px;
+}
+
+.home .banner .slogan2 {
+    margin-bottom: 15px;
+}
+
+
+/*************** ABOUT ***************/
+
+.about {
+    background-color: var(--color-primary);
+}
+
+.about .container {
+    display: flex;
+}
+
+.about .timing {
+    background-image: url(../images/brush-big.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    width: 33%;
+    padding: 20px;
+    position: relative;
+    top: -50px;
+}
+
+.about .timing .icon-cut {
+    width: 50px;
+}
+
+.about .timing .overlay {
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 40px 20px;
+    width: 100%;
+  }
+
+.about .timing .overlay h3 {
+    text-transform: uppercase;
+    color: var(--color-primary);
+    font-weight: bold;
+    font-size: 30px;
+    border-bottom: 1px solid var(--color-primary);
+    margin: 0 auto 30px auto;
+    width: fit-content;
+}
+
+.about .timing .overlay h4 {
+    color: gray;
+    font-weight: 400;
+}
+
+.about .timing .overlay span {
+    color: white;
+    font-size: 14px;
+}
+
+.about .timing .text:after {
+    content: '•';
+    display: block;
+    font-size: 25px;
+    color: white;
+    margin-top: 10px;
+}
+
+.about .timing .text:last-of-type:after {
+    content: '|';
+}
+
+.about .timing .icons {
+    display: block;
+    margin: 10px auto;
+}
+
+.about .experience {
+    width: 66%;
+    margin-left: 7%;
+    margin-top: 100px;
+    padding: 5px;
+    color: white;
+}
+
+.about .experience .text {
+    display: flex;
+}
+
+.about .experience h2 {
+    font-weight: 400;
+    font-size: 40px;
+    width: 100%;
+}
+
+.about .experience h2:after {
+    display: block;
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color: #c2aa8c;
+    margin: 20px 0;
+}
+
+.about .experience .text p {
+    margin-bottom: 20px;
+    text-align: justify;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+
+/*************** SERVIÇOS ***************/
+
+.services {
+    background-color: var(--color-primary-light);
+    color: var(--color-secondary);
+}
+
+.services .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.services h2 {
+    font-size: 50px;
+    font-weight: 400;
+    margin: 100px auto 10px auto;
+    color: var(--color-secondary);
+}
+
+.services .icon {
+    width: 150px;
+    margin-bottom: 80px;
+}
+
+.services .boxes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+}
+
+.services .boxes .box {
+    padding: 50px 40px;
+    margin: 0px auto 120px auto;
+    width: 330px;
+    border: 3px solid var(--color-primary);
+}
+
+.services .boxes .box h4 {
+    margin: 25px auto 0px auto;
+    color: var(--color-secondary);
+}
+
+.services .boxes .box p {
+    font-size: 15px;
+    color: black;
+    padding: 8px;
+    line-height: 25px;
+}
+
+
+
+/*************** AGENDAMENTO ***************/
+
+
+.appointment {
+    background-color: var(--color-primary);
+    background-image: url(../images/chair-ic.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 300px;
+    height: 100vh;
+    color: var(--color-primary-light)
+}
+
+.appointment .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.appointment h2 {
+    font-size: 50px;
+    font-weight: 400;
+    margin: 100px auto 10px auto;
+}
+
+.appointment .personal-data {
+    display: flex;
+    justify-content: space-between;
+    margin: 65px 0 10px 0;
+}
+
+.appointment form {
+    width: 100%;
+}
+
+.appointment label {
+    font-size: 15px;
+    display: block;
+    margin-bottom: 2px;
+    color: var(--color-primary-light);
+}
+
+.appointment input, select {
+    width: 260px;
+    padding: 10px;
+    outline: none;
+    border-style: none;
+    border-radius: 3px;
+}
+
+.appointment textarea {
+    width: 100%;
+    border-radius: 3px;
+    display: block;
+}
+
+.appointment .btn {
+    background-color: var(--color-secondary);
+    color: white;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px 40px;
+    border-width: initial;
+    border-style: none;
+}
+
+
+
+
+/*************** GALERIA DE FOTOS ***************/
+
+.gallery {
+    background-color: var(--color-primary-light);
+}
+
+.gallery .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery h2 {
+    font-size: 50px;
+    font-weight: 400;
+    margin: 100px auto 10px auto;
+    color: var(--color-secondary);
+}
+
+.gallery .gallery-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 1150px;
+    margin: 50px auto;
+}
+
+.gallery .gallery-wrapper div {
+    margin: 6px;
+    border: 10px solid var(--color-primary);
+    width: 33%;
+}
+
+.gallery .gallery-wrapper div img {
+    width: 100%;
+    margin-bottom: -7px;
+}
+
+
+
+/*************** LOCALIZAÇÃO ***************/
+
+
+.location {
+    background-image: url(../images/bg-location.jpg);
+    background-attachment: scroll;
+    height: 80vh;
+    padding: 100px 0;
+}
+
+.location .head {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 120px;
+    background-color: #191919;
+}
+
+.location .map {
+    width: 100%;
+}
+
+.location .map iframe {
+    width: 100%;
+}
+
+.location .head .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location .head .info .icon {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    border: 1px solid var(--color-primary);
+    border-radius: 100%;
+}
+
+.location .head .info .text {
+    display: block;
+    font-size: 13px;
+}
+
+
+.location .head .info .text span:first-child {
+    color: silver;
+}
+
+.location .head .info .text span:last-child {
+    color: white;
+}
+
+
+/*************** FOOTER ***************/
+
+.footer {
+    height: 100px;
+    background-color: #191919;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p {
+    font-size: 12px;
+}
