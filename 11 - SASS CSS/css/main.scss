@@ -1,0 +1,71 @@
+
+@import 'variables';
+@import 'base';
+@import 'mixins';
+@import 'extends';
+
+
+
+.container {
+  display: flex;
+  justify-content: space-around;
+
+  .box {
+    width: 30%;
+    color: black;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+
+    &.active {
+      background: $color-secondary;
+    }
+
+    h2 {
+      font-family: $font-primary;
+      font-size: 22px;
+      margin: 10px 20px 30px 20px;
+    }
+
+    p {
+      font-family: $font-secondary;
+      font-size: 18px;
+
+      &.hidden {
+        display: none;
+      }
+    }
+ 
+    ul {
+      @include reset-list();
+    }
+
+    a {
+      color: green;
+
+      &:hover {
+        color: yellow;
+
+        & + p.hidden {
+          display: block;
+        }
+      }
+    }
+
+    .success {
+      @extend %box-alert;
+      @include bg-effect(success);
+    }
+
+    .warning {
+      @extend %box-alert;
+      @include bg-effect(warning);
+    }
+
+    .danger {
+      @extend %box-alert;
+      @include bg-effect(danger);
+    }
+  }
+
+}
