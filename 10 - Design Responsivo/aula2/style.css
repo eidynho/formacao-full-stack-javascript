@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body {
+    background-color: black;
+    color: white;
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+    body {
+        background-color: red;
+        color: lightblue;
+    }
+
+    p {
+        font-size: 40px;
+    }
+}

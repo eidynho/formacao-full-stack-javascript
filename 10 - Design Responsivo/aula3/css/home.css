@@ -1,0 +1,54 @@
+.banner {
+  background: url(https://png.pngtree.com/thumb_back/fw800/background/20190223/ourmid/pngtree-blue-smart-light-tech-background-backgroundlight-effect-backgroundelectronic-image_81225.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 300px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.banner h2 {
+  font-size: 6em;
+  letter-spacing: -4px;
+}
+
+.services {
+  display: flex;
+}
+
+.services .box {
+  margin: 20px 10px;
+  padding: 20px;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.services .box img {
+  width: 100%;
+}
+
+.services .box h3 {
+  font-size: 3em;
+  margin: 10px 0;
+}
+.services .box p {
+  font-size: 1.5em;
+}
+
+@media (max-width: 900px) {
+  .services {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 580px) {
+  .banner h2 {
+    font-size: 4em;
+    letter-spacing: 0px;
+    padding: 0 20px;
+    text-align: center;
+  }
+}
