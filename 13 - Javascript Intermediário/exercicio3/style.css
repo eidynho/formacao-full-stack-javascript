@@ -1,0 +1,22 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.div-cidades {
+    display: none;
+}
+
+.visibile {
+    display: block;
+}
+
+.inputError {
+    border: 1px solid red;
+}
+
+.error {
+    color: red;
+}
