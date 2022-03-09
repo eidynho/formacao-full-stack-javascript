@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Consulta CEP</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Informe o CEP</h1>
+        <p>Digite o CEP sem o hífen( - ) e ao sair o campo de endereço será completado automaticamente. Pode utilizar a tecla TAB após digitar o CEP.</p>
+        <form action="get">
+            <label for="inputCep">CEP:</label>
+            <input type="number" name="inputCEP" id="inputCep">
+            <br>
+            <label for="inputRua">Rua:</label>
+            <input type="text" name="inputRua" id="inputRua">
+            <br>
+            <label for="inputBairro">Bairro:</label>
+            <input type="text" name="inputBairro" id="inputBairro">
+            <br>
+            <label for="inputCidade">Cidade:</label>
+            <input type="text" name="inputCidade" id="inputCidade">
+            <br>
+            <label for="inputEstado">Estado:</label>
+            <input type="text" name="inputEstado" id="inputEstado">
+            <br>
+            <label for="inputIBGE">IBGE:</label>
+            <input type="number" name="inputIBGE" id="inputIBGE">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

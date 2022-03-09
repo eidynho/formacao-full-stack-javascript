@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: rgb(157, 194, 224);
+    --color-secondary: rgb(46, 117, 199);
+}
+
+::selection {
+    background-color: purple;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--color-primary);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    margin: 0 50px;
+    border: 2px solid var(--color-secondary);
+    padding: 50px;
+    border-radius: 40px 0 40px 0;
+    background-color: rgb(220, 244, 252);
+    box-shadow: 12px 12px 0px var(--color-secondary);
+}
+
+h1 {
+    color: var(--color-secondary);
+    padding: 5px 0;
+}
+
+p {
+    padding-bottom: 10px;
+}
+
+input {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+#inputCep {
+    width: 100px;
+}
+
+#inputRua {
+    width: 300px;
+}
+
+#inputBairro {
+    width: 200px;
+}
+
+#inputCidade {
+    width: 188px;
+}
+
+#inputEstado {
+    width: 50px;
+}
+
+#inputIBGE {
+    width: 212px;
+}

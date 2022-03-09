@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: rgb(157, 224, 183);
+    --color-secondary: rgb(94, 199, 46);
+}
+
+::selection {
+    background-color: yellow;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--color-primary);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    margin: 0 50px;
+    border: 2px solid var(--color-secondary);
+    padding: 70px;
+    border-radius: 40px 0 40px 0;
+    background-color: rgb(220, 252, 227);
+    box-shadow: 12px 12px 0px var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: var(--color-secondary);
+    padding: 5px 0;
+}
+
+p {
+    padding-bottom: 10px;
+}
+
+input {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.btnCalcular {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-secondary);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.253);
+    cursor: pointer;
+}
+
+.btnCalcular:hover {
+    background-color: var(--color-primary);
+}
+
+.btnCalcular:active {
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.253)
+}
+
+.container-result {
+    margin-top: 25px;
+    border: 1px solid var(--color-secondary);
+    border-radius: 10px 0 10px 0;
+    box-shadow: 3px 3px 0px var(--color-secondary);
+}
+
+.resultado {
+    padding: 15px;
+    font-size: 20px;
+}
