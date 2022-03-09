@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .divForm {
+            display: flex;
+            align-items: center;
+        }
+
+        .none {
+            display: none;
+        }
+
+        .mensagem {
+            font-size: 26px;
+        }
+
+        .inputText {
+            padding: 10px;
+        }
+
+        img {
+            width: 30px;
+            padding: 10px;
+        }
+
+        .btnEnviar {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="divForm">
+        <input type="text" class="inputText" placeholder="Digite uma mensagem">
+        <div class="loading none"><img src="img/loading.gif" alt=""></div>
+        <button class="btnEnviar">Enviar</button>
+    </div>
+    <div class="mensagem"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
