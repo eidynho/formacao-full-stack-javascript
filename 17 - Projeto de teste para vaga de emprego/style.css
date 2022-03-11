@@ -17,6 +17,9 @@ body {
     font-family: 'Helvetica Neue', sans-serif;
 }
 
+
+/*********** HEADER ***********/
+
 .header {
     height: 400px;
 }
@@ -55,7 +58,7 @@ body {
 }
 
 
-.header .subtitle {
+.header p {
     font-size: 14px;
     font-weight: lighter;
     letter-spacing: 0.2px;
@@ -92,6 +95,93 @@ body {
     padding: 11px 16px;
 }
 
+/*********** SECTION HELP ALGORITHM ***********/
+
+
+
+.main {
+    background-color: white;
+}
+
+.main .container {
+    width: 1000px;
+    margin: auto;
+}
+
+/* HELP ALGORITHM */
+
+.main .help-algorithm {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 40px 0px 40px;
+}
+
+.main .help-algorithm .text-algorithm {
+    width: 57%;
+}
+
+.main .help-algorithm .text-algorithm .subtitle {
+    color: var(--color-tertiary);
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.main .help-algorithm .text-algorithm p {
+    color: var(--color-tertiary);
+    margin-bottom: 30px;
+    font-size: 14px;
+    word-spacing: 0.2px;
+    letter-spacing: 0.1px;
+    line-height: 20px;
+}
+
+/* FORM-ALGORITHM */
+
+.main .help-algorithm .form-algorithm {
+    width: 36%;
+    color: var(--color-tertiary);
+}
+
+.main .help-algorithm .form-algorithm > label > input {
+    display: block;
+    width: 100%;
+    padding: 7px;
+    margin: 7px 0 25px 0;
+}
+
+.main .help-algorithm .form-algorithm .gender {
+    display: flex;
+}
+
+.main .help-algorithm .form-algorithm .gender label {
+    margin: 0 40px 25px 0;
+    color: var(--color-tertiary);
+    cursor: pointer;
+}
+
+.main .help-algorithm .form-algorithm .btn-form-enviar {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid var(--color-secondary);
+    color: var(--color-tertiary);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.main .help-algorithm .form-algorithm .btn-form-enviar:hover {
+    transition: all 0.5s ease;
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+
+
+
+
+
 @media (max-width: 840px) {
     .header .span-title {
         margin: 70px 30px 0 20px;
@@ -101,7 +191,7 @@ body {
         margin: 0px 30px 10px 20px;
     }
 
-    .header .subtitle {
+    .header p {
         margin: 0px 30px 40px 20px;
     }
 
