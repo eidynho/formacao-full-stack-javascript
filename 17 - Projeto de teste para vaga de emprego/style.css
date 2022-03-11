@@ -18,18 +18,16 @@ body {
     background: white;
 }
 
-
 .header {
+    height: 400px;
     background-color: var(--color-secondary);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
-    color: white;
-    height: 400px;
-
+    position: relative;
+    
 }
 
 .container-header {
-
-    width: 800px;
+    max-width: 800px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -41,6 +39,7 @@ body {
     font-weight: normal;
     margin: 70px auto 0 auto;
     letter-spacing: 0.1px;
+    color: white;
 }
 
 .header .title {
@@ -48,14 +47,16 @@ body {
     font-weight: bold;
     margin: 4px auto 30px auto;
     letter-spacing: 0.4px;
+    color: white;
 }
 
 
 .header .subtitle {
     font-size: 14px;
-    font-weight: normal;
+    font-weight: lighter;
     letter-spacing: 0.2px;
-    margin: 0px auto 50px auto;
+    margin: 0px auto 60px auto;
+    color: white;
 }
 
 .header ul {
@@ -64,12 +65,19 @@ body {
 }
 
 .header ul li {
+    border: 2px solid var(--color-secondary);
     list-style: none;
     padding: 10px;
-    border-radius: 4px;
+    border-radius: 6px;
     background-color: white;
     min-width: 160px;
     text-align: center;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.178);
+}
+
+.header ul li:hover {
+    transition: all .5s ease;
+    background-color: var(--color-quaternary);
 }
 
 .header ul li > a {
@@ -78,4 +86,28 @@ body {
     font-size: 14px;
     min-width: 500px;
     padding: 11px 16px;
+}
+
+@media (max-width: 840px) {
+    .header .span-title {
+        margin: 70px 30px 0 20px;
+    }
+
+    .header .title {
+        margin: 0px 30px 10px 20px;
+    }
+
+    .header .subtitle {
+       margin: 0px 30px 40px 20px;
+    }
+
+    .header ul {
+        margin: 0px 20px;
+        flex-wrap: wrap;
+    }
+
+    .header ul li {
+        margin: 10px;
+    }
+
 }
