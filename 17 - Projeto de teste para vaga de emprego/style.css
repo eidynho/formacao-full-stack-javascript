@@ -15,15 +15,18 @@
 
 body {
     font-family: 'Helvetica Neue', sans-serif;
-    background: white;
 }
 
 .header {
     height: 400px;
+}
+
+.header-background {
     background-color: var(--color-secondary);
+    height: 400px;
+    width: 100vw;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
-    position: relative;
-    
+    position: absolute;
 }
 
 .container-header {
@@ -31,6 +34,7 @@ body {
     margin: auto;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .header .span-title {
@@ -70,9 +74,9 @@ body {
     padding: 10px;
     border-radius: 6px;
     background-color: white;
-    min-width: 160px;
+    min-width: 165px;
     text-align: center;
-    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.178);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.116);
 }
 
 .header ul li:hover {
@@ -98,7 +102,7 @@ body {
     }
 
     .header .subtitle {
-       margin: 0px 30px 40px 20px;
+        margin: 0px 30px 40px 20px;
     }
 
     .header ul {
@@ -107,7 +111,6 @@ body {
     }
 
     .header ul li {
-        margin: 10px;
+        margin: 5px;
     }
-
 }
