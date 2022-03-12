@@ -194,7 +194,7 @@ body {
 }
 
 .main .special-selection .subtitle::before, .main .special-selection .subtitle::after {
-    content: '––––';
+    content: '––––––';
     letter-spacing: -2px;
     margin: 0 10px;
 }
@@ -268,14 +268,87 @@ body {
 
 .main .special-selection .btn-more-products {
     width: 300px;
-    padding: 10px;
+    height: 40px;
     background-color: white;
     color: var(--color-tertiary);
     border: 1px solid var(--color-secondary);
     border-radius: 6px;
+    font-weight: normal;
+    font-size: 16px;
     cursor: pointer;
     margin:  25px auto 150px auto;
 }
+
+
+
+/*********** SECTION SHARE ***********/
+
+.main .share {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 100px 0px 100px;
+}
+
+.main .share .subtitle {
+    color: var(--color-tertiary);
+    margin-bottom: 50px;
+}
+
+.main .share .subtitle::before, .main .share .subtitle::after {
+    content: '––';
+    letter-spacing: -2px;
+    margin: 0 10px;
+}
+
+.main .share .text {
+    color: var(--color-tertiary);
+    margin-bottom: 40px;
+}
+
+.main .share #share-form {
+    width: 100%;
+}
+
+.main .share #share-form > div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main .share #share-form label {
+    color: var(--color-tertiary);
+    font-size: 14px;
+}
+
+.main .share #share-form input {
+    display: block;
+    min-width: 350px;
+    padding: 7px;
+    margin: 7px 0 25px 0;
+}
+
+.main .share #share-form .btn-send-share-form {
+    width: 300px;
+    height: 40px;
+    margin: 30px 0 100px 0;
+    background-color: white;
+    border: 1px solid var(--color-secondary);
+    border-radius: 6px;
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--color-tertiary);
+    cursor: pointer;
+}
+
+.main .share #share-form .btn-send-share-form:hover {
+    transition: all 0.5s ease;
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+
+
+
 
 
 
@@ -309,6 +382,10 @@ body {
         margin: 60px 0 0 0;
     }
 
+    .main .special-selection .subtitle {
+        font-size: 18px;
+    }
+
     .main .special-selection .products-wrapper {
         flex-direction: column;
     }
@@ -339,6 +416,7 @@ body {
 }
 
 @media (max-width: 1000px) {
+    /* MAIN HELP ALGORITHM */
     .main .help-algorithm {
         flex-direction: column;
         align-items: center;
@@ -351,5 +429,33 @@ body {
 
     .main .help-algorithm .form-algorithm {
         width: 90%;
+    }
+
+
+    /* MAIN SHARE */
+
+    .main .share {
+        margin: 20px 20px;
+    }
+
+    .main .share .subtitle {
+        font-size: 18px;
+    }
+
+    .main .share .text{
+        text-align: center;
+    }
+
+    .main .share #share-form > div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main .share #share-form > div > div {
+        width: 100%;
+    }
+
+    .main .share #share-form input {
+        width: 100%;
     }
 }
