@@ -104,7 +104,7 @@ body {
 }
 
 .main .container {
-    width: 1000px;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -182,7 +182,12 @@ body {
 
 
 
-@media (max-width: 840px) {
+
+
+
+
+
+@media (max-width: 739px) {
     .header .span-title {
         margin: 70px 30px 0 20px;
     }
@@ -202,5 +207,21 @@ body {
 
     .header ul li {
         margin: 5px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .main .help-algorithm {
+        flex-direction: column;
+        align-items: center;
+        margin: 60px 0 0 0;
+    }
+
+    .main .help-algorithm .text-algorithm {
+        width: 90%;
+    }
+
+    .main .help-algorithm .form-algorithm {
+        width: 90%;
     }
 }
