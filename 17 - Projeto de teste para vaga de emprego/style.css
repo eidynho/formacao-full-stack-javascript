@@ -27,7 +27,7 @@ body {
 .header-background {
     background-color: var(--color-secondary);
     height: 400px;
-    width: 100vw;
+    width: 100%;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
     position: absolute;
 }
@@ -95,7 +95,7 @@ body {
     padding: 11px 16px;
 }
 
-/*********** SECTION HELP ALGORITHM ***********/
+/*********** MAIN ***********/
 
 
 
@@ -104,11 +104,11 @@ body {
 }
 
 .main .container {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
 }
 
-/* HELP ALGORITHM */
+/*********** SECTION HELP ALGORITHM ***********/
 
 .main .help-algorithm {
     display: flex;
@@ -160,7 +160,7 @@ body {
     cursor: pointer;
 }
 
-.main .help-algorithm .form-algorithm .btn-form-enviar {
+.main .help-algorithm .form-algorithm .btn-send-form {
     width: 100%;
     padding: 10px;
     background-color: white;
@@ -171,17 +171,111 @@ body {
     cursor: pointer;
 }
 
-.main .help-algorithm .form-algorithm .btn-form-enviar:hover {
+.main .help-algorithm .form-algorithm .btn-send-form:hover {
     transition: all 0.5s ease;
     background-color: var(--color-secondary);
     color: white;
 }
 
 
+/*********** SECTION SPECIAL SELECTION ***********/
 
 
+.main .special-selection {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 40px 0px 40px;
+}
+
+.main .special-selection .subtitle {
+    color: var(--color-tertiary);
+    margin: 0px auto 50px auto;
+    font-size: 22px;
+}
+
+.main .special-selection .subtitle::before, .main .special-selection .subtitle::after {
+    content: '––––';
+    letter-spacing: -2px;
+    margin: 0 10px;
+}
 
 
+.main .special-selection .products-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main .special-selection .products-wrapper .product {
+    width: 201px;
+    min-height: 150px;
+    margin: 0 10px 35px 10px;
+}
+
+.main .special-selection .products-wrapper .product .img-product {
+    height: 150px;
+    width: 200px;
+    border: 1px solid var(--color-secondary);
+}
+
+.main .special-selection .products-wrapper .product .name-product {
+    color: var(--color-tertiary);
+    font-weight: normal;
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.main .special-selection .products-wrapper .product .description-product {
+    color: var(--color-tertiary);
+    line-height: 19px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.main .special-selection .products-wrapper .product .previous-price,
+.main .special-selection .products-wrapper .product .installment-price {
+    display: block;
+    color: var(--color-tertiary);
+    font-size: 12px;
+}
+
+.main .special-selection .products-wrapper .product .current-price {
+    display: block;
+    color: var(--color-secondary);
+    font-weight: bold;
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.main .special-selection .products-wrapper .product .btn-buy {
+    width: 100%;
+    height: 30px;
+    margin-top: 15px;
+    background-color: white;
+    border: 1px solid var(--color-secondary);
+    border-radius: 6px;
+    font-weight: bold;
+    color: var(--color-tertiary);
+    cursor: pointer;
+}
+
+.main .special-selection .products-wrapper .product .btn-buy:hover,
+.main .special-selection .btn-more-products:hover {
+    transition: all 0.5s ease;
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+.main .special-selection .btn-more-products {
+    width: 300px;
+    padding: 10px;
+    background-color: white;
+    color: var(--color-tertiary);
+    border: 1px solid var(--color-secondary);
+    border-radius: 6px;
+    cursor: pointer;
+    margin:  25px auto 150px auto;
+}
 
 
 
@@ -207,6 +301,40 @@ body {
 
     .header ul li {
         margin: 5px;
+    }
+}
+
+@media (max-width: 760px) {
+    .main .special-selection {
+        margin: 60px 0 0 0;
+    }
+
+    .main .special-selection .products-wrapper {
+        flex-direction: column;
+    }
+    
+    .main .special-selection .products-wrapper .product {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 35px auto;
+    }
+
+    .main .special-selection .products-wrapper .product .img-product {
+    margin-right: 20px;
+    height: 135px;
+    width: 180px;
+    }
+
+    .main .special-selection .products-wrapper .product .name-product {
+        margin: 0 0 15px 0;
+    }
+
+    .main .special-selection .products-wrapper .product .description-product {
+        display: none;
+    }
+
+    .main .special-selection .products-wrapper .product .btn-buy {
+        width: 165px;
     }
 }
 
