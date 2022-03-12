@@ -216,6 +216,11 @@ body {
     height: 150px;
     width: 200px;
     border: 1px solid var(--color-secondary);
+    display: flex;
+}
+
+.main .special-selection .products-wrapper .product .img-product img {
+    margin: auto;
 }
 
 .main .special-selection .products-wrapper .product .name-product {
