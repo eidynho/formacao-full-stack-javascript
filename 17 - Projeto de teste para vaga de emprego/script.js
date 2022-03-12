@@ -10,21 +10,24 @@ const installmentPrice = document.querySelectorAll('.installment-price')
 
 const btnMoreProducts = document.querySelector('.btn-more-products')
 
-
+let page = 1
 
 function jsonTransform(response) {
     return response.json()
 }
 
+/* function to request API of products and transform to JSON */
 
 async function addProducts() {
-    const dados = await fetch('https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1')
+    const dados = await fetch(`https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=${page}`)
         .then(jsonTransform)
 
         return dados
 }
 
 addProducts()
+
+/* function to show the products */
 
 async function showProducts() {
     const products = await addProducts()
@@ -48,9 +51,11 @@ async function showProducts() {
                 <button class="btn-buy">Comprar</button>
             </div>
         `
+        
       productWrapper.appendChild(productEl)
     })
+    page++
 }
 
 showProducts()
-
+btnMoreProducts.addEventListener('click', showProducts)
