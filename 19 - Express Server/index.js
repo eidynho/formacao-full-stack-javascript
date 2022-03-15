@@ -6,33 +6,27 @@ const app = express()
 
 
 
+// definindo o template engine
+app.set('view engine', 'ejs')
 
-// definindo os arquivos estáticos
-const staticFolder = path.join(__dirname, 'views')
-const expressStatic = express.static(staticFolder)
-app.use(expressStatic)
-    // OU maneira mais comum:
+
+
+
+// definindo os arquivos estáticos (quando não utilizar o template engine)
     // app.use(express.static(path.join(__dirname, 'views')))
 
-
 // definindo os arquivos públicos
-const publicFolder = path.join(__dirname, 'public')
-const expressPublic = express.static(publicFolder)
-app.use(expressPublic)
-    // OU maneira mais comum:
-    // app.use(express.static(path.join(__dirname, 'public')))
-
-
+    app.use(express.static(path.join(__dirname, 'public')))
 
 
     
 // rotas
 app.get('/', (req, res) => { //REQuest, RESponse
-    res.render('views/index')
+    res.render('index')
 })
 
-app.get('/sobre', (req, res) => { //REQuest, RESponse
-    res.send('página sobre')
+app.get('/posts', (req, res) => { //REQuest, RESponse
+    res.render('posts')
 })
 
 
