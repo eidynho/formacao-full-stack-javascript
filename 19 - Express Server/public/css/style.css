@@ -16,14 +16,14 @@ body {
 
 
 header {
-    height: 430px;
+    height: 490px;
     background-color: lightblue;
     clip-path: url(#headerCurve);
 }
 
 header .bg {
     width: 100%;
-    height: 430px;
+    height: 490px;
     position: absolute;
     color: rgb(114, 178, 199);
     clip-path: url(#headerCurve);
@@ -35,6 +35,7 @@ header .container {
 }
 
 header .content {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,7 +47,7 @@ header h1 {
     position: relative;
     font-size: 38px;
     color: white;
-    margin: 75px auto 0 auto;
+    margin: 85px auto 0 auto;
 }
 
 header h1::before {
@@ -64,7 +65,7 @@ header h1::before {
 header h1::after {
     content: '';
     bottom: -14px;
-    right: -24px;
+    right: -21px;
     width: 130px;
     height: 4px;
     border: 1px solid white;
@@ -80,15 +81,16 @@ header p {
 }
 
 header ul {
-    position: relative;
-    margin: 40px auto 0 auto;
+    margin: 50px auto 0 auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    width: 300px;
+    width: 90%;
 }
 
 header ul li {
     list-style: none;
+    margin-bottom: 30px;
 }
 
 header a {
@@ -100,9 +102,9 @@ header a {
 }
 
 header a:hover {
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(79, 184, 219);
     color: white;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease-in-out;
 }
 
 
@@ -134,7 +136,7 @@ main .content > p {
     margin: 10px auto;
 }
 
-main .content p:last-child {
+main .content > p:last-child {
     margin-bottom: 150px;
 }
 
@@ -176,6 +178,102 @@ main .content .box-wrapper .box p {
 
 
 
+
+
+
+main .content .post-wrapper {
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+main .content .post-wrapper .post {
+    background-color: white;
+    color: lightblue;
+    width: 100%;
+    padding: 40px;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.098);
+}
+
+main .content .post-wrapper .post h2 {
+    margin-bottom: 15px;
+}
+
+main .content .post-wrapper .post p {
+    text-align: justify;
+}
+
+main .content .post-wrapper .post img {
+    margin-top: 15px;
+}
+
+
+
+
+
+main .content .cadastrado {
+    padding: 15px;
+    background-color: rgb(79, 184, 219);
+    color: white;
+    border-radius: 12px;
+    margin: 10px 0 30px 0;
+}
+
+main .content .form-cadastro-post {
+    display: flex;
+    flex-direction: column;
+}
+
+main .content .form-cadastro-post label {
+    color: lightblue;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+main .content .form-cadastro-post input {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(243, 243, 243);
+    width: 70%;
+    height: 42px;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    padding: 14px;
+    color: rgb(53, 53, 53);
+    margin-bottom: 15px;
+}
+
+main .content .form-cadastro-post textarea {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(243, 243, 243);
+    border: none;
+    border-radius: 14px;
+    outline: none;
+    padding: 12px;
+    color: rgb(53, 53, 53);
+}
+
+main .content .form-cadastro-post button {
+    margin: 25px 0 150px 0;
+    padding: 10px;
+    background-color: lightblue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+    width: 180px;
+    cursor: pointer;
+}
+
+main .content .form-cadastro-post button:hover {
+    transition: all 0.4s ease;
+    width: 198px;
+    height: 44px;
+    background-color: rgb(79, 184, 219);
+}
 
 
 /* FOOTER */

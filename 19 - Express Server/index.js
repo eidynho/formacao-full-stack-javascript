@@ -1,7 +1,14 @@
 // MVC - MODEL (banco de dados) VIEW (visualização (HTML, estáticos..)) CONTROLLER (responsável por gerenciar os dados)
 
+const { text } = require('express')
 const express = require('express')
 const path = require('path') //biblioteca p manipular caminhos de pastas
+const fs = require('fs')
+
+
+
+
+
 const app = express()
 
 
@@ -19,15 +26,69 @@ app.set('view engine', 'ejs')
     app.use(express.static(path.join(__dirname, 'public')))
 
 
+// habilita server para receber dados via post (formulário)    
+    app.use(express.urlencoded({ extended: true }))
+
+
     
 // rotas
 app.get('/', (req, res) => { //REQuest, RESponse
-    res.render('index')
+    res.render('index', { //passando valores
+        title: 'Página teste - Home'
+    })
 })
 
-app.get('/posts', (req, res) => { //REQuest, RESponse
-    res.render('posts')
+app.get('/posts', (req, res) => {
+    res.render('posts', {
+        title: 'Página teste - Posts',
+        posts: [
+            {
+                title: "Novidade no mundo da tecnologia",
+                text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis tenetur placeat quasi assumenda velit numquam quam quo amet aliquam aut adipisci, mollitia illum. Blanditiis aperiam odio vitae dignissimos laborum recusandae.',
+                stars: 3,
+            },
+            {
+                title: "Aprenda a criar um servidor com node.js",
+                text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis tenetur placeat quasi assumenda velit numquam quam quo amet aliquam aut adipisci, mollitia illum. Blanditiis aperiam odio vitae dignissimos laborum recusandae.',
+            },
+            {
+                title: "Javascript é a linguagem mais usada no mundo",
+                text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis tenetur placeat quasi assumenda velit numquam quam quo amet aliquam aut adipisci, mollitia illum. Blanditiis aperiam odio vitae dignissimos laborum recusandae.',
+                stars: 4,
+            }
+            
+        ]
+        
+    })
 })
+
+app.get('/cadastro-posts', (req, res) => {
+    const { c } = req.query
+    res.render('cadastro-posts', { 
+        title: 'Página teste - Cadastrar Post',
+        cadastrado: c,
+    })
+})
+
+
+app.post('/salvar-post', (req, res) => {
+    const { title, text } = req.body
+
+    const data = fs.readFileSync('./store/posts.json')
+    const posts = JSON.parse(data)
+
+    posts.push([
+        title,
+        text,
+    ])
+
+    const postsString = JSON.stringify(posts)
+    fs.writeFileSync('./store/posts.json', postsString)
+
+    res.redirect('/cadastro-posts?c=1')
+})
+
+
 
 
 

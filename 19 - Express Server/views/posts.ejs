@@ -13,65 +13,23 @@
             <div class="content">
                 <h1>Posts</h1>
 
-                <div class="box-wrapper">
-                    <div class="box">
-                        <h2>Lorem ipsum</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, magnam!</p>
-                    </div>
-                    <div class="box">
-                        <h2>Lorem ipsum</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, magnam!</p>
-                    </div>
-                    <div class="box">
-                        <h2>Lorem ipsum</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, magnam!</p>
-                    </div>
-                    <div class="box">
-                        <h2>Lorem ipsum</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, magnam!</p>
-                    </div>
-                    <div class="box">
-                        <h2>Lorem ipsum</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, magnam!</p>
-                    </div>
-                    <div class="box">
-                        <h2>Lorem ipsum</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, magnam!</p>
-                    </div>
-                    <div class="box">
-                        <h2>Lorem ipsum</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, magnam!</p>
-                    </div>
-                    <div class="box">
-                        <h2>Lorem ipsum</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, magnam!</p>
-                    </div>
+                <div class="post-wrapper">
+                    <% posts.forEach((post) => {%>
+
+                        <div class="post">
+                            <h2><%= post.title%></h2>
+                            <p><%= post.text%></p>
+
+                            <% if (post.stars) {%>
+                                <% for( let index = 0; index < post.stars; index++ ) { %>
+                                    <img src="https://cdn.iconscout.com/icon/free/png-256/star-bookmark-favorite-shape-rank-16-28621.png" alt="" width="20px">
+                                <% } %>
+                            <%}%>
+                        </div>
+                        
+                    <%})%>
                 </div>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis tenetur placeat quasi assumenda velit numquam quam quo amet aliquam aut adipisci, mollitia illum. Blanditiis aperiam odio vitae dignissimos laborum recusandae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, deserunt hic aliquam atque minima debitis fuga placeat ex, expedita tenetur eos? Iusto fugiat maxime adipisci illo facilis voluptas dicta error?</p>
-
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto sit possimus voluptatibus, velit aliquid dolor officia? Nihil repellat ducimus, quisquam eum possimus vero alias ullam maiores fugiat laborum qui a autem architecto odit sequi in. Quam ipsam nostrum, pariatur doloribus itaque eum aperiam, sunt sit dolorem expedita quasi blanditiis? Beatae!</p>
-
-                <div class="box-wrapper">
-                    <div class="box">
-                        <h2>Lorem ipsum</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, magnam!</p>
-                    </div>
-                    <div class="box">
-                        <h2>Lorem ipsum</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, magnam!</p>
-                    </div>
-                    <div class="box">
-                        <h2>Lorem ipsum</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, magnam!</p>
-                    </div>
-                    <div class="box">
-                        <h2>Lorem ipsum</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, magnam!</p>
-                    </div>
-                </div>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa tenetur repellat expedita voluptates numquam nesciunt rem ducimus! Ipsa et iusto autem officiis perspiciatis ea in maxime dignissimos dolores quisquam unde, harum suscipit impedit nam consequatur totam molestiae maiores amet corporis?</p>
             </div>
 
             
