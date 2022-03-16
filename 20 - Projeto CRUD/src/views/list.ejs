@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <%- include ('partials/head.ejs')%>
+</head>
+<body>
+    <h1><%= title%></h1>
+    <%- include ('partials/navbar.ejs')%>
+
+
+    <ul>
+        <% users.forEach((user) => { %>
+            <li>
+                <%= user.name %> - idade: <%= user.age %> - <%= user.email %> - 
+                <a href="/edit?id=<%= user._id%>">[editar]</a> - 
+                <a href="/remove/<%= user._id%>">[remove]</a>
+            </li>
+        <%})%>
+    </ul>
+
+
+    <%- include ('partials/foot.ejs')%>
+
+</body>
+</html>
