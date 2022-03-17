@@ -1,14 +1,14 @@
 const express = require('express')
     //const path = require('path')
 
-    //const db = require('./database')
+const db = require('./database/db')
 const routes = require('./routes/routes')
 
 const app = express()
 
 
 // conexão com o banco de dados
-    //db.connect()
+db.connect()
 
 
 //habilita server para receber dados via post (formulário)
