@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+    <main class="main">
+        <h2>Simulador</h2>
+        
+        <form action="/" method="POST">
+            <div>
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="inputName" required>
+            </div>
+
+            <div>
+                <label for="monthly-payment">Mensalidade</label>
+                <input type="number" name="monthly-payment" id="inputMonthly" required>
+            </div>
+            <div>
+                <label for="selectTime">Tempo</label>
+                <select name="selectTime" id="select-time">
+                    <option checked>-- Selecione o tempo --</option>
+                    <option value="12">1 ano</option>
+                    <option value="24">2 anos</option>
+                    <option value="36">3 anos</option>
+                    <option value="48">4 anos</option>
+                    <option value="60">5 anos</option>
+                    <option value="72">6 anos</option>
+                    <option value="84">7 anos</option>
+                    <option value="96">8 anos</option>
+                    <option value="108">9 anos</option>
+                    <option value="120">10 anos</option>   
+                </select>
+            </div>
+
+            <div>
+                <label for="interest-rate">Taxa de juros</label>
+                <input type="number" name="interest-rate" id="interest-rate" required>
+            </div>
+
+            <div>
+                <button id="btn-simular">Simular</button>
+            </div>
+        </form>
+    </main>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
