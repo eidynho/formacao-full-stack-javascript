@@ -10,7 +10,7 @@ const ProductController = require('../controllers/products')
 
 router.get('/products/:id?', ProductController.get) //:id? (significa que é opcional, e se não passar o id também funciona)
 router.post('/products', ProductController.post)
-// router.put('/products/:id', ProductController.put)
+router.put('/products/:id', ProductController.put)
 // router.delete('/products/:id', ProductController.delete)
 
 module.exports = router
