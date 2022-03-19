@@ -31,7 +31,7 @@ body {
 .container {
     margin: 0 50px;
     border: 2px solid var(--color-secondary);
-    padding: 50px;
+    padding: 37px;
     border-radius: 40px 0 40px 0;
     background-color: rgb(220, 244, 252);
     box-shadow: 12px 12px 0px var(--color-secondary);
@@ -43,7 +43,8 @@ h1 {
 }
 
 p {
-    padding-bottom: 10px;
+    padding-bottom: 15px;
+    text-align: justify;
 }
 
 input {
@@ -59,7 +60,7 @@ input {
 }
 
 #inputRua {
-    width: 300px;
+    width: 220px;
 }
 
 #inputBairro {
@@ -71,9 +72,9 @@ input {
 }
 
 #inputEstado {
-    width: 50px;
+    width: 45px;
 }
 
 #inputIBGE {
-    width: 212px;
+    width: 120px;
 }
