@@ -11,9 +11,9 @@
 <body>
     
     <main class="main">
-        <h2>Simulador</h2>
+        <h1 class="title">Simulador</h1>
         
-        <form action="/" method="POST">
+        <form method="POST" id="form">
             <div>
                 <label for="name">Nome</label>
                 <input type="text" name="name" id="inputName" required>
@@ -41,7 +41,7 @@
             </div>
 
             <div>
-                <label for="interest-rate">Taxa de juros</label>
+                <label for="interest-rate">Taxa de juros mensal em %</label>
                 <input type="number" name="interest-rate" id="interest-rate" required>
             </div>
 
@@ -49,6 +49,10 @@
                 <button id="btn-simular">Simular</button>
             </div>
         </form>
+
+        <div class="result"></div>
+        <button class="btn-refresh none">Simular novamente</button>
+
     </main>
 
 
