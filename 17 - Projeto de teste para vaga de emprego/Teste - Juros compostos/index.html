@@ -11,47 +11,49 @@
 <body>
     
     <main class="main">
-        <h1 class="title">Simulador</h1>
-        
-        <form method="POST" id="form">
-            <div>
-                <label for="name">Nome</label>
-                <input type="text" name="name" id="inputName" required>
+        <div class="container">
+            <div class="content">
+                <h1 class="title">Simulador</h1>
+                
+                <form method="POST" id="form">
+                    <div class="box">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="inputName" required>
+                    </div>
+                    <div class="box">
+                        <label for="monthly-payment">Mensalidade</label>
+                        <input type="number" name="monthly-payment" id="inputMonthly" required>
+                    </div>
+                    <div class="box">
+                        <label for="selectTime">Tempo</label>
+                        <select name="selectTime" id="select-time">
+                            <option checked>-- Selecione o tempo --</option>
+                            <option value="12">1 ano</option>
+                            <option value="24">2 anos</option>
+                            <option value="36">3 anos</option>
+                            <option value="48">4 anos</option>
+                            <option value="60">5 anos</option>
+                            <option value="72">6 anos</option>
+                            <option value="84">7 anos</option>
+                            <option value="96">8 anos</option>
+                            <option value="108">9 anos</option>
+                            <option value="120">10 anos</option>
+                        </select>
+                    </div>
+                    <div class="box">
+                        <label for="interest-rate">Taxa de juros mensal em %</label>
+                        <input type="number" name="interest-rate" id="interest-rate" required>
+                    </div>
+                    <div class="box">
+                        <button id="btn-simular">Simular</button>
+                    </div>
+                </form>
+                <div class="box-result">
+                    <div class="result"></div>
+                    <button class="btn-refresh none">Simular novamente</button>
+                </div>
             </div>
-
-            <div>
-                <label for="monthly-payment">Mensalidade</label>
-                <input type="number" name="monthly-payment" id="inputMonthly" required>
-            </div>
-            <div>
-                <label for="selectTime">Tempo</label>
-                <select name="selectTime" id="select-time">
-                    <option checked>-- Selecione o tempo --</option>
-                    <option value="12">1 ano</option>
-                    <option value="24">2 anos</option>
-                    <option value="36">3 anos</option>
-                    <option value="48">4 anos</option>
-                    <option value="60">5 anos</option>
-                    <option value="72">6 anos</option>
-                    <option value="84">7 anos</option>
-                    <option value="96">8 anos</option>
-                    <option value="108">9 anos</option>
-                    <option value="120">10 anos</option>   
-                </select>
-            </div>
-
-            <div>
-                <label for="interest-rate">Taxa de juros mensal em %</label>
-                <input type="number" name="interest-rate" id="interest-rate" required>
-            </div>
-
-            <div>
-                <button id="btn-simular">Simular</button>
-            </div>
-        </form>
-
-        <div class="result"></div>
-        <button class="btn-refresh none">Simular novamente</button>
+        </div>
 
     </main>
 

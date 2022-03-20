@@ -50,7 +50,7 @@ const Main = {
                     this.$title.innerHTML = 'Resultado'
                     this.$form.classList.add('none')
                     this.$divResult.innerHTML += `
-                        Olá ${this.$name.value}, juntando R$ ${this.$inputMonthly.value} todo mês, você terá <strong>R$ ${resultString}</strong> em ${this.$selectTime.value} meses.
+                        Olá ${this.$name.value}, juntando R$ ${this.$inputMonthly.value} todo mês, com uma taxa mensal de ${this.$interestRate.value}% você terá <strong>R$ ${resultString}</strong> em ${this.$selectTime.value} meses.
                     `
                     this.$btnRefresh.classList.remove('none')
                     

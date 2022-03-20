@@ -1,3 +1,118 @@
+@charset "UTF=8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: rgb(241, 195, 230);
+    --color-secondary: rgb(190, 33, 148);
+    --background-content: rgba(255, 247, 247, 0.925);
+    --color-text: rgb(66, 66, 66);
+}
+
+body {
+    background-color: var(--color-primary);
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    margin: 0 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    width: 85%;
+    max-width: 800px;
+    padding: 2em;
+    background-color: var(--background-content);
+    border: 1px solid var(--color-secondary);
+    border-radius: 3em 0;
+    box-shadow: 12px 12px 0px var(--color-secondary);
+}
+
+.content .title {
+    color: var(--color-secondary);
+    font-size: 2.2em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.content #form .box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.6em;
+}
+
+.content #form label {
+    color: var(--color-text);
+    font-size: 1.1em;
+    margin-bottom: 0.3em;
+}
+
+.content #form input {
+    border: none;
+    outline: none;
+    padding: 0.8em;
+    border-radius: 0.6em;
+    width: 90%;
+    color: var(--color-text);
+}
+
+.content #form select {
+    border: none;
+    outline: none;
+    padding: 0.7em;
+    border-radius: 0.6em;
+    width: 90%;
+}
+
+.content #form #btn-simular,
+.content .btn-refresh {
+    padding: 0.8em;
+    margin: 1em auto 0 auto;
+    background-color: white;
+    color: var(--color-secondary);
+    font-size: 0.9em;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.6em;
+    width: 50%;
+    cursor: pointer;
+}
+
+.content #form #btn-simular:hover,
+.content .btn-refresh:hover {
+    background-color: var(--color-secondary);
+    color: white;
+    transition: all 0.5s ease;
+    padding: 1em;
+    width: 60%;
+    margin-bottom: 0.3em;
+}
+
+.content .box-result {
+    display: flex;
+    flex-direction: column;
+}
+
+.content .box-result .result {
+    margin-bottom: 1em;
+}
+
 .none {
     display: none;
 }
