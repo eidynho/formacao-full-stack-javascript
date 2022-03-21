@@ -223,12 +223,6 @@ body {
     transition: all 0.5s ease;
 }
 
-.main .special-selection a:visited {
-    color: var(--color-tertiary);
-}
-
-
-
 
 /*********** FOOTER ***********/
 
