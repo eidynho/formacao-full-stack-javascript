@@ -27,6 +27,48 @@ const Main = {
     Events: {
         simulateButton_click: async function(e) {
            e.preventDefault()
+
+            let hasError = false
+           if (!this.$name.value) {
+               hasError = true
+                this.$name.classList.add('error')
+                this.$name.classList.remove('ok')
+            } else {
+                this.$name.classList.remove('error')
+                this.$name.classList.add('ok')
+            }
+
+            if(!this.$inputMonthly.value) {
+                hasError = true
+                this.$inputMonthly.classList.add('error')
+                this.$inputMonthly.classList.remove('ok')
+            } else {
+                this.$inputMonthly.classList.remove('error')
+                this.$inputMonthly.classList.add('ok')
+            }
+
+            if(!this.$selectTime.value) {
+                hasError = true
+                this.$selectTime.classList.add('error')
+                this.$selectTime.classList.remove('ok')
+            } else {
+                this.$selectTime.classList.remove('error')
+                this.$selectTime.classList.add('ok')
+            }
+
+            if(!this.$interestRate.value) {
+                hasError = true
+                this.$interestRate.classList.add('error')
+                this.$interestRate.classList.remove('ok')
+            } else {
+                this.$interestRate.classList.remove('error')
+                this.$interestRate.classList.add('ok')
+            }
+
+            if (hasError) {
+                return
+            }
+
             const configs = {
                 method: 'POST',
                 headers: {
@@ -56,6 +98,8 @@ const Main = {
                     
                 })
                 .catch(error => console.log(error))
+
+                
         },
 
         refreshButton_click: function() {
@@ -65,18 +109,3 @@ const Main = {
 }
 
 Main.init()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -13,6 +13,8 @@
     --color-secondary: rgb(190, 33, 148);
     --background-content: rgba(255, 247, 247, 0.925);
     --color-text: rgb(66, 66, 66);
+    --color-error: rgba(255, 0, 0, 0.322);
+    --color-ok: rgba(0, 255, 0, 0.322);
 }
 
 body {
@@ -80,12 +82,24 @@ body {
     width: 90%;
 }
 
-.content #form #btn-simular,
+.content #form #btn-simular {
+    padding: 0.8em;
+    margin: 1em auto 0 auto;
+    color: var(--color-secondary);
+    background-color: white;
+    font-size: 0.9em;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.6em;
+    width: 50%;
+    cursor: pointer;
+}
+
 .content .btn-refresh {
     padding: 0.8em;
     margin: 1em auto 0 auto;
-    background-color: white;
     color: var(--color-secondary);
+    background-color: white;
     font-size: 0.9em;
     font-weight: bold;
     border: none;
@@ -117,3 +131,10 @@ body {
     display: none;
 }
 
+.error {
+    background-color: var(--color-error);
+}
+
+.ok {
+    background-color: var(--color-ok);
+}
