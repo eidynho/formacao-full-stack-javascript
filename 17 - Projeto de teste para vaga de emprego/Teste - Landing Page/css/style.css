@@ -21,7 +21,7 @@ body {
 /*********** HEADER ***********/
 
 .header {
-    height: 400px;
+    height: 420px;
 }
 
 .header-background {
@@ -69,6 +69,7 @@ body {
 .header ul {
     display: flex;
     justify-content: space-around;
+
 }
 
 .header ul li {
@@ -327,7 +328,7 @@ body {
 
 .main .share #share-form input {
     display: block;
-    min-width: 350px;
+    min-width: 250px;
     padding: 7px;
     margin: 7px 0 25px 0;
 }
@@ -453,12 +454,13 @@ body {
     }
 
     .main .help-algorithm .text-algorithm {
-        width: 90%;
+        width: 80%;
     }
 
     .main .help-algorithm .form-algorithm {
-        width: 90%;
+        width: 80%;
     }
+
 
 
     /* MAIN SHARE */
@@ -481,7 +483,7 @@ body {
     }
 
     .main .share #share-form > div > div {
-        width: 100%;
+        width: 80%;
     }
 
     .main .share #share-form input {
