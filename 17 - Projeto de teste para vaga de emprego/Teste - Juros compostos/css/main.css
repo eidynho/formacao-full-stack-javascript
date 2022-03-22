@@ -34,6 +34,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: var(--color-primary);
 }
 
 .content {
@@ -137,4 +138,17 @@ body {
 
 .ok {
     background-color: var(--color-ok);
+}
+
+
+@media (max-width: 420px) {
+    .content .title {
+        font-size: 1.7em;
+    }
+}
+
+@media (max-width: 350px) {
+    .content .title {
+        font-size: 1.3em;
+    }
 }
